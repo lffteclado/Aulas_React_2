@@ -8,10 +8,24 @@ import Repeticao from './layout/Repeticao'
 import Condicional from './layout/Condicional'
 import Pai from './comunicacao/direta/Pai'
 import Super from './comunicacao/indireta/Super'
+import Input from './form/input'
+import Contador from './contador/contador'
+import MegaSena from './megaSena/mega'
 
 
 export default props => (
 <div className="App">
+<h1>Fundamentos React</h1>
+<div className="Cards">
+<Card titulo='#10 - Numeros Mega Sena' color='#9cb999'>
+    <MegaSena qtdNumero={8}></MegaSena>
+</Card>
+<Card titulo='#09 - Contador' color='#0fff9f'>
+    <Contador valor={10} passo={5}></Contador>
+</Card>
+<Card titulo='#08 - Input' color='#9c0f5f'>
+    <Input></Input>
+</Card>
 <Card titulo="#07 - Comunicação Indireta" color="#7bc043">
     <Super></Super>
 </Card>
@@ -41,5 +55,6 @@ export default props => (
 <Card titulo="#01 - Primeiro Componente" color="#651e3e">
     <Primeiro />    
 </Card>
+</div>
 </div>
 );

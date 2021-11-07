@@ -9,5 +9,5 @@ export default props =>
         {/*Passa uma propriedade especifica do Pai para o filho */}
         <Filho sobreNome={props.sobreNome}><strong>Maria</strong></Filho>
 
-        <Filho sobreNome="Filva"><strong>Pedro</strong></Filho>
+        <Filho sobreNome="Silva"><strong>Pedro</strong></Filho>
     </div>
